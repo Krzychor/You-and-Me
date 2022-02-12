@@ -22301,7 +22301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b9b251b74685b4a8bacddb6fd76a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: cutscene 1
+  nextScene: cutscene 2
   loadingScreen: {fileID: 0}
 --- !u!1 &1374629993
 GameObject:

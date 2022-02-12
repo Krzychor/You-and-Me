@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474125fdc01cbf8418b0cb6e8ad802c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: MainScen
+  nextScene: Menu
 --- !u!328 &1857344725
 VideoPlayer:
   m_ObjectHideFlags: 0

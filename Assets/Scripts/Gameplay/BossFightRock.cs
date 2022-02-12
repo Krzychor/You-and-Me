@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AAAAA : MonoBehaviour
+public class BossFightRock : MonoBehaviour
 {
     public GameObject skala;
     public float time = 6;

@@ -15,6 +15,8 @@ public class Collector : MonoBehaviour
         if(other.gameObject.tag == "Collectable")
         {
             counter++;
+            other.GetComponent<SpriteRenderer>().enabled = false;
+
             AudioSource audioSource = other.GetComponent<AudioSource>();
             if (audioSource != null && audioSource.clip != null)
             {
@@ -24,9 +26,6 @@ public class Collector : MonoBehaviour
             }
             else
                 Destroy(other.gameObject);
-
-
-            GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 
