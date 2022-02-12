@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
     Color color;
     Image imageBackgrondMain;
     Image titleImage;
-    string NameScene = "cutscene 0";
+    string NameScene = "cutscene 1";
     [SerializeField] AudioMixer mixer;
     string[] resolutions = new string[8] { "1920x1080", "1680x1050", "1600x900", "1366x768", "1280x1024", "1280x720", "1024x768", "800x600" };
     int indexResolution;
@@ -213,7 +213,7 @@ public class MainMenu : MonoBehaviour
         asyncOperation.Add(SceneManager.LoadSceneAsync(NameScene));
         //Don't let the Scene activate until you allow it to
         asyncOperation[0].allowSceneActivation = false;
-        Debug.Log("Pro :" + asyncOperation[0].progress.ToString());
+     //   Debug.Log("Pro :" + asyncOperation[0].progress.ToString());
         buttoms.SetActive(false);
         title.SetActive(false);
         sildLoad.gameObject.SetActive(true);
