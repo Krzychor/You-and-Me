@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9529eb3e58a50743b46a8d559158e4c, type: 3}
+  m_Name: Dialog 1
+  m_EditorClassIdentifier: 
+  parts:
+  - characterImage: {fileID: 21300000, guid: d1841023adbe973448b275057cdb8597, type: 3}
+    characterName: Dziewczynka
+    dialogue: 'Gdzie ja jestem? '
+    readTime: 6
+  - characterImage: {fileID: 21300000, guid: e3a60e426fee3ea41bbca457c15de055, type: 3}
+    characterName: Duszek
+    dialogue: (...)
+    readTime: 3
+  - characterImage: {fileID: 21300000, guid: b6c5289be1f112541b0cb6f819660f67, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Chcia\u0142by\u015B mi pom\xF3c? "
+    readTime: 3
+  - characterImage: {fileID: 21300000, guid: 1724d25d3145c0248b0f505a0c55fd97, type: 3}
+    characterName: Duszek
+    dialogue: (...)
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: b8fedb1a3a6d1a9418e5824e35640eb4, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Wprawdzie ci\u0119 nie znam, ale wydajesz mi si\u0119 ca\u0142kiem
+      uroczy. \r"
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: b7d3ab7177039d642865926055b1ef48, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Ho? Nie lubisz jak tak ci\u0119 nazywaj\u0105? \r"
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: b8fedb1a3a6d1a9418e5824e35640eb4, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Przepraszam, nie mog\u0142am si\u0119 powstrzyma\u0107."
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: 817808cecbc55e8489a426044e97b103, type: 3}
+    characterName: Duszek
+    dialogue: (...)
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: d1841023adbe973448b275057cdb8597, type: 3}
+    characterName: Dziewczynka
+    dialogue: 'Nie, nie wiem kim jestem.  '
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: 9d9e3807c2579f64f9492fafd3394715, type: 3}
+    characterName: Dziewczynka
+    dialogue: "I chyba za bardzo uderzy\u0142am si\u0119 w g\u0142ow\u0119. "
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: b6c5289be1f112541b0cb6f819660f67, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Czy poka\u017Cesz mi drog\u0119 do wyj\u015Bcia?"
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: 499cc3094fff7fd479510edb04edbde6, type: 3}
+    characterName: Duszek
+    dialogue: (...)
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: b8fedb1a3a6d1a9418e5824e35640eb4, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Super! Od dzisiaj jeste\u015Bmy przyjaci\xF3\u0142mi."
+    readTime: 0

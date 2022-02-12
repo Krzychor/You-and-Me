@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9529eb3e58a50743b46a8d559158e4c, type: 3}
+  m_Name: Dialog 3
+  m_EditorClassIdentifier: 
+  parts:
+  - characterImage: {fileID: 21300000, guid: d1841023adbe973448b275057cdb8597, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Brrr\u2026 przeszed\u0142 mnie jaki\u015B dziwny dreszcz.\r"
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: b6c5289be1f112541b0cb6f819660f67, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Chyba kto\u015B nas obserwuje w tych zaro\u015Blach. "
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: e3a60e426fee3ea41bbca457c15de055, type: 3}
+    characterName: Duszek
+    dialogue: (...)
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: b8fedb1a3a6d1a9418e5824e35640eb4, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Masz racj\u0119, p\xF3jd\u017Amy si\u0119 przywita\u0107. "
+    readTime: 0

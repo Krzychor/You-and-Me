@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9529eb3e58a50743b46a8d559158e4c, type: 3}
+  m_Name: kamien
+  m_EditorClassIdentifier: 
+  parts:
+  - characterImage: {fileID: 0}
+    characterName: 
+    dialogue: "Tysi\u0119czny dzie\u0144 panowania s\u0142o\u0144ca w kalendarzu
+      Uriela zwiastowa\u0142 zmierzch lat \u015Bwietno\u015Bci oraz rozpocz\u0119cie
+      nierz\u0105d\xF3w ciemno\u015Bci. \r\n"
+    readTime: 6
+  - characterImage: {fileID: 0}
+    characterName: 
+    dialogue: "\rGdy istoty nam obce przyby\u0142y do granic lasu, wnet upad\u0142y
+      bramy. "
+    readTime: 3
+  - characterImage: {fileID: 0}
+    characterName: 
+    dialogue: "My, wychowani w pe\u0142nym pokoju i harmonii, duchy, byli\u015Bmy
+      bezbronni wobec ich zaawansowanej broni. \r\nMimo naszych interwencji i pr\xF3\u015Bb,
+      rzekome istoty pustoszy\u0142y nas las. Zrywali ga\u0142\u0119zie, niszczyli
+      nasze grobowce, aby w ko\u0144cu dorwa\u0107 si\u0119 do naszej ostatniej \u015Bwi\u0119to\u015Bci. "
+    readTime: 0
+  - characterImage: {fileID: 0}
+    characterName: 
+    dialogue: "Zacz\u0119li masowo rani\u0107 nasze porosty zakorzenione g\u0142\u0119boko
+      w ziemi. Kierowani chciwo\u015Bci\u0105 osi\u0105gni\u0119cia swoich egoistycznych
+      cel\xF3w, rozgniewali las, a ten postanowi\u0142 ukara\u0107 nas wszystkich\u2026"
+    readTime: 3
+  - characterImage: {fileID: 0}
+    characterName: 
+    dialogue: "W ca\u0142ym lesie rozpowszechni\u0142a si\u0119 choroba, kt\xF3r\u0105
+      nazywali\u015Bmy \u201Cska\u017Ceniem\u201D. Gniew B\xF3stwa zebra\u0142 \u017Cniwa
+      w postaci \u017Cy\u0107 ludzkich jak i duchowych."
+    readTime: 5
+  - characterImage: {fileID: 0}
+    characterName: 
+    dialogue: "Gdyby\u015Bmy tylko mogli odzyska\u0107 relikwia zniszczonej \u015Bwi\u0119tej
+      bramy\u2026 by\u0107 mo\u017Ce wtedy byliby\u015Bmy w stanie oczy\u015Bci\u0107
+      porosty i uspokoi\u0107 las. "
+    readTime: 5

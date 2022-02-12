@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9529eb3e58a50743b46a8d559158e4c, type: 3}
+  m_Name: Dialog 4
+  m_EditorClassIdentifier: 
+  parts:
+  - characterImage: {fileID: 21300000, guid: b8fedb1a3a6d1a9418e5824e35640eb4, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Tak! W ko\u0144cu zebrali\u015Bmy wszystkie cz\u0119\u015Bci. Teraz
+      na pewno uratujemy twoich towarzyszy!"
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: 9a013a8f3c33b3b448c395c2635b97ba, type: 3}
+    characterName: Duszek
+    dialogue: (...)
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: d1841023adbe973448b275057cdb8597, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Wiem, \u017Ce si\u0119 martwisz. "
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: b8fedb1a3a6d1a9418e5824e35640eb4, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Pami\u0119taj jednak, \u017Ce jestem z tob\u0105. Ty i ja. Nic nie
+      rozwi\u0105\u017Ce \u0142\u0105cz\u0105cej nas wi\u0119zi. "
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: 1724d25d3145c0248b0f505a0c55fd97, type: 3}
+    characterName: Duszek
+    dialogue: (...)
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: b8fedb1a3a6d1a9418e5824e35640eb4, type: 3}
+    characterName: Dziewczynka
+    dialogue: 'Na pewno. '
+    readTime: 0
+  - characterImage: {fileID: 21300000, guid: 713f072d62b6b384c9c8c54865334f60, type: 3}
+    characterName: Dziewczynka
+    dialogue: "Kiedy oczy\u015Bcimy las, nazbieramy i zjemy najpyszniejsze je\u017Cyny
+      jakie \u015Bwiat widzia\u0142!"
+    readTime: 0
