@@ -14,7 +14,7 @@ public class DialogController : MonoBehaviour
     public float LettersPerSecond = 15;
 
     PlayerMovement playerMovement;
-    VisionSwitch visionSwitch;
+    PlayerSwitch visionSwitch;
     Dialog dialog;
     int currentPart = 0;
     float lastReadTime = 0;
@@ -24,7 +24,7 @@ public class DialogController : MonoBehaviour
         if (singleton != null)
             Debug.LogWarning("Multiple dialog controllers on scene!");
         singleton = this;
-        visionSwitch = FindObjectOfType<VisionSwitch>();
+        visionSwitch = FindObjectOfType<PlayerSwitch>();
         DialogCanva.SetActive(false);
     }
 

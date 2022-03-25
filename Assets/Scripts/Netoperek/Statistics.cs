@@ -12,7 +12,9 @@ namespace Stat
         /// <summary>
         /// Iloœæ ¿ycia Gracza.
         /// </summary>
-        public bool[] HP { get; set; }
+    //    public int HP { get; set; }
+        public int GirlHP { get; set; }
+        public int GhostHP { get; set; }
         /// <summary>
         /// Pozycja gracza
         /// </summary>

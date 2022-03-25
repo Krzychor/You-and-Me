@@ -26171,6 +26171,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 883180236}
     - target: {fileID: 5288290569212905919, guid: fe6fa67b8d61e084b9f9dc8ceb6dc913, type: 3}
+      propertyPath: switchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 006766865a9ad63498af8170539b9f90, type: 3}
+    - target: {fileID: 5288290569212905919, guid: fe6fa67b8d61e084b9f9dc8ceb6dc913, type: 3}
+      propertyPath: PlayerObject1
+      value: 
+      objectReference: {fileID: 883180236}
+    - target: {fileID: 5288290569212905919, guid: fe6fa67b8d61e084b9f9dc8ceb6dc913, type: 3}
+      propertyPath: PlayerObject2
+      value: 
+      objectReference: {fileID: 476414526}
+    - target: {fileID: 5288290569212905919, guid: fe6fa67b8d61e084b9f9dc8ceb6dc913, type: 3}
       propertyPath: startingLayer
       value: 2
       objectReference: {fileID: 0}

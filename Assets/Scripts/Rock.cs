@@ -32,7 +32,7 @@ public class Rock : MonoBehaviour
         playerMovement = player.GetComponent<PlayerMovement>();
         playerMovement.enabled = false;
         playerMovement.SetAnimationToIdle();
-        FindObjectOfType<VisionSwitch>().enabled = false;
+        FindObjectOfType<PlayerSwitch>().enabled = false;
     }
 
 

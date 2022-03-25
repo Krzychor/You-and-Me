@@ -140,17 +140,12 @@ public class PlayerMovement : MonoBehaviour
             rg.velocity = new Vector2(move * MovementSpeed, rg.velocity.y);
             model.transform.localScale = new Vector3(Mathf.Abs(model.transform.localScale.x),
                 model.transform.localScale.y, model.transform.localScale.z);
-         //   rotator.RotateRight();
-        //    transform.localScale = new Vector3(temp1.x,temp1.y,temp1.z);
         }
         else if (move < 0 && CanGoLeft())
         {
             rg.velocity = new Vector2(move * MovementSpeed, rg.velocity.y);
             model.transform.localScale = new Vector3(-Mathf.Abs(model.transform.localScale.x),
                 model.transform.localScale.y, model.transform.localScale.z);
-
-            //     rotator.RotateLeft();
-            //    transform.localScale = new Vector3(temp1.x, temp1.y, temp1.z);
         }
 
 

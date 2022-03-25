@@ -21,7 +21,8 @@ public class BossTriger : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Dosta³");
-            Events.Event.AddDemage();
+            Player player = collision.gameObject.GetComponent<Player>();
+            player?.ReceiveDmg();
             collider.enabled = false;
             StartCoroutine(WaitOnCollaider());
         }

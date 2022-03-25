@@ -56,7 +56,6 @@ public class BossHeandVeritical : MonoBehaviour
                 {
                     isBack = !isBack;
                     wait = 0f;
-                    Debug.Log("IFFFFFFFF");
                     this.gameObject.SetActive(false);
                 }
 
@@ -69,7 +68,6 @@ public class BossHeandVeritical : MonoBehaviour
                 {
                     isBack = !isBack;
                     wait = 0f;
-                    Debug.Log("Elsssssss");
                   //  this.gameObject.SetActive(false);
                 }
             }

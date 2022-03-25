@@ -15,7 +15,8 @@ public class Fist : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Events.Event.AddDemage();
+            Player player = collision.gameObject.GetComponent<Player>();
+            player?.ReceiveDmg();
         }
         else
         {

@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 
-public class VisionSwitch : MonoBehaviour
+public class PlayerSwitch : MonoBehaviour
 {
+    public static event Action<Player> OnPlayerSwitch;
+
     public PCF CameraController;
 
     [Range(1, 2)]
     public int startingLayer = 1;
 
-    public GameObject Player1;
-    public GameObject Player2;
+    public GameObject PlayerObject1;
+    public GameObject PlayerObject2;
     public AudioClip switchSound;
 
     public GameObject particleEmmiter1To2;
@@ -26,6 +29,8 @@ public class VisionSwitch : MonoBehaviour
     int currentLayer = 0;
     private int startCharacter = 0;
     [SerializeField] GameObject post1, post2;
+    Player player1;
+    Player player2;
 
     GameObject[] vision1;
     GameObject[] vision2;
@@ -38,6 +43,8 @@ public class VisionSwitch : MonoBehaviour
     
     void Start()
     {
+        player1 = PlayerObject1.GetComponentInChildren<Player>();
+        player2 = PlayerObject2.GetComponentInChildren<Player>();
         CollectLayers();
 
         currentLayer = startingLayer;
@@ -55,10 +62,10 @@ public class VisionSwitch : MonoBehaviour
 
     void ShowVision1()
     {
-        Player2.SetActive(false);
-        Player1.transform.position = Player2.transform.position;
-        Player1.SetActive(true);
-        CameraController.target = Player1.transform;
+        PlayerObject2.SetActive(false);
+        PlayerObject1.transform.position = PlayerObject2.transform.position;
+        PlayerObject1.SetActive(true);
+        CameraController.target = PlayerObject1.transform;
         currentLayer = 1;
 
         foreach (GameObject G in vision1)
@@ -66,14 +73,15 @@ public class VisionSwitch : MonoBehaviour
 
         foreach (GameObject G in vision2)
             G.SetActive(false);
+        OnPlayerSwitch(player1);
     }
 
     void ShowVision2()
     {
-        Player1.SetActive(false);
-        Player2.transform.position = Player1.transform.position;
-        Player2.SetActive(true);
-        CameraController.target = Player2.transform;
+        PlayerObject1.SetActive(false);
+        PlayerObject2.transform.position = PlayerObject1.transform.position;
+        PlayerObject2.SetActive(true);
+        CameraController.target = PlayerObject2.transform;
         currentLayer = 2;
 
         foreach (GameObject G in vision1)
@@ -81,6 +89,7 @@ public class VisionSwitch : MonoBehaviour
 
         foreach (GameObject G in vision2)
             G.SetActive(true);
+        OnPlayerSwitch(player2);
     }
 
 
@@ -126,8 +135,7 @@ public class VisionSwitch : MonoBehaviour
 
     void Update()
     {
-        if (canSwitch && 
-            Input.GetButtonDown("Fire1"))
+        if (canSwitch && Input.GetButtonDown("Fire1"))
         {
             StartCoroutine(StartSwitchCooldown());
             SwitchVision();

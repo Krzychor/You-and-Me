@@ -26,6 +26,6 @@ public class RockSkipper : MonoBehaviour
     void UnblockPlayer()
     {
         player.GetComponent<PlayerMovement>().enabled = true;
-        FindObjectOfType<VisionSwitch>().enabled = true;
+        FindObjectOfType<PlayerSwitch>().enabled = true;
     }
 }

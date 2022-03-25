@@ -16,7 +16,8 @@ public class StatisticsMenager : MonoBehaviour
         statisticsPlayer.autoSkipDialogs = true;
         statisticsPlayer.PlayerPos = new Vector2();
         statisticsPlayer.TransformCollectionItems = new List<Vector2_Serializable>();
-        statisticsPlayer.HP = new bool[3] { true, true, true };
+        //    statisticsPlayer.HP = new bool[3] { true, true, true };
+        statisticsPlayer.GhostHP = 3;
         statisticsPlayer.SecretObject = false;
         LoadStatistic();
         Events.Event.InvokeLoad();

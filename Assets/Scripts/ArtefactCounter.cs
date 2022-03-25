@@ -13,9 +13,7 @@ public class ArtefactCounter : MonoBehaviour
 
     void Update()
     {
-        int x = check.collector.counter;
-        if (x > check.required)
-            x = check.required;
+        int x = Mathf.Min(check.collector.counter, check.required);
         text.text = x.ToString() + "/" + check.required.ToString();
     }
 }

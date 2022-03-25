@@ -43,25 +43,20 @@ public class DieUI : MonoBehaviour
 
     private void OnEnable()
     {
-        Events.Event.playerDead += die;
+        Player.OnPlayerDead += Die;
     }
 
     private void OnDisable()
     {
-        Events.Event.playerDead -= die;
+        Player.OnPlayerDead -= Die;
     }
 
-    void die()
+
+
+    void Die()
     {
         img.gameObject.SetActive(true);
         StartCoroutine(Fade());
-    }
-
-
-
-    public static void Die()
-    {
-        singleton.die();
     }
 
 }

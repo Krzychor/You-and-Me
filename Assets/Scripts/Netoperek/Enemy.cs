@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Enemi
+namespace Enemy
 {
-    public class Enemi : MonoBehaviour
+    public class Enemy : MonoBehaviour
     {
 
         #region Editor 
@@ -16,13 +16,15 @@ namespace Enemi
         [Range(0.001f, 0.2f)] [SerializeField] float speed = 0.01f;
         float wait = 0f;
         bool isBack = false;
-        new Collider2D collider ;
-        [SerializeField] float deleyOnCollaider = 2f;
+        new Collider2D collider;
+        SpriteRenderer spriteRenderer;
+        [SerializeField] float delayOnCollider = 2f;
+
 
 #if UNITY_EDITOR
         private void Awake()
         {
-            
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
             if (TryGetComponent<Collider2D>(out Collider2D collider))
             {
                 this.collider = collider;
@@ -65,7 +67,7 @@ namespace Enemi
             {
                 if (isBack)
                 {
-
+                    spriteRenderer.flipY = true;
                     transform.position = Vector2.MoveTowards(end, start, wait);
                     wait += speed;
                     if (transform.position.x == start.x)
@@ -77,6 +79,7 @@ namespace Enemi
                 }
                 else
                 {
+                    spriteRenderer.flipY = false;
                     transform.position = Vector2.MoveTowards(start, end, wait);
                     wait += speed;
                     if (transform.position.x == end.x)
@@ -88,22 +91,14 @@ namespace Enemi
                 yield return new WaitForFixedUpdate();
             }
         }
-        IEnumerator WaitOnCollaider()
-        {
-            yield return new WaitForSecondsRealtime(deleyOnCollaider);
-            collider.enabled = true;
-            yield break;
-        }
 
-      
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerStay2D(Collider2D collision)
         {
             if (collision.gameObject.tag == "Player")
             {
-                Events.Event.AddDemage();
-                collider.enabled = false;
-                StartCoroutine(WaitOnCollaider());
+                Player player = collision.gameObject.GetComponent<Player>();
+                player?.ReceiveDmg();
             }
         }
     }

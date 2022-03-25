@@ -12,6 +12,6 @@ public class UnderMap : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
-            Events.Event.InvokePlayerDead();
+            collision.gameObject.GetComponent<Player>()?.Die();
     }
 }
