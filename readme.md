@@ -1,10 +1,8 @@
-# You-and-Me
+# You and Me
 
 
 
 
-## Opis
-<strong>You and Me</strong> 
 
 
 
