@@ -17,10 +17,10 @@ public class BossTriger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Dosta³");
+      //  Debug.Log("Dosta³");
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("Dosta³");
+         //   Debug.Log("Dosta³");
             Player player = collision.gameObject.GetComponent<Player>();
             player?.ReceiveDmg();
             collider.enabled = false;

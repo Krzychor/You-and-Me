@@ -20,8 +20,6 @@ namespace Enemy
         SpriteRenderer spriteRenderer;
         [SerializeField] float delayOnCollider = 2f;
 
-
-#if UNITY_EDITOR
         private void Awake()
         {
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -32,9 +30,11 @@ namespace Enemy
             else
             {
 
-                Debug.LogError("Brak komonentu !!!. Dodaj Collider2D do " + this.name);
+                Debug.LogError("Brak komponentu !!!. Dodaj Collider2D do " + this.name);
             }
         }
+
+#if UNITY_EDITOR
         private void OnDrawGizmosSelected()
         {
             end.y = transform.position.y;
@@ -67,7 +67,7 @@ namespace Enemy
             {
                 if (isBack)
                 {
-                    spriteRenderer.flipY = true;
+                    spriteRenderer.flipX = false;
                     transform.position = Vector2.MoveTowards(end, start, wait);
                     wait += speed;
                     if (transform.position.x == start.x)
@@ -79,7 +79,7 @@ namespace Enemy
                 }
                 else
                 {
-                    spriteRenderer.flipY = false;
+                    spriteRenderer.flipX = true;
                     transform.position = Vector2.MoveTowards(start, end, wait);
                     wait += speed;
                     if (transform.position.x == end.x)
